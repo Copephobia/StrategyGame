@@ -5,7 +5,7 @@ A simple PHP-based multiplayer strategy game.
 ## Setting Up
 
 * Copy the files to your web server.
-* Modify the ```safe.php``` file to your MySQL server credentials.
+* Modify the ```functions.php``` file to your MySQL server credentials.
 * Set up the cron jobs (see below) to run at specified times.
 * Register your account through the game.
 * Play the game!

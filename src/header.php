@@ -1,3 +1,6 @@
+<?php
+require_once("./functions.php");
+?>
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
