@@ -1,0 +1,80 @@
+/* Body Styling */
+body {
+    background-color: #C4C4C4;
+}
+
+body a {
+    color: #000000;
+}
+
+/* Header Styling */
+#header {
+    background-color: #898989;
+    border: 1px solid #000000;
+    font-size: 18pt;
+    color: #FFFFFF;
+    width: 800px;
+}
+
+/* Message Output Styling */
+#output {
+    border: 1px solid #898989;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Content Container Styling */
+#container {
+    overflow: hidden;
+}
+
+/* Navigation Styling */
+#nav {
+    border-right: 1px solid #898989;
+    border-left: 1px solid #000000;
+    background-color: #C3C3C3;
+    margin-bottom: -32767px;
+    padding-bottom: 32767px;
+    width: 179px;
+    float: left;
+}
+
+#nav_div a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#nav_div {
+    padding: 10px;
+}
+
+/* Content Styling */
+#content {
+    border-right: 1px solid #000000;
+    background-color: #DDDDDD;
+    margin-bottom: -32767px;
+    padding-bottom: 32767px;
+    width: 620px;
+    float: left;
+}
+
+#con_div a {
+    color: #000000;
+}
+
+#con_div {
+    padding: 10px;
+}
+
+/* Footer Styling */
+#footer {
+    border: 1px solid #000000;
+    background-color: #898989;
+    font-size: 12pt;
+    color: #FFFFFF;
+    width: 800px;
+}
