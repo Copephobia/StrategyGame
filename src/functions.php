@@ -32,7 +32,30 @@ function protect($str)
  */
 function output($str)
 {
-    echo "<div id=\"output\">{$string}</div>";
+    echo "<div id=\"output\">{$str}</div>";
 }
 
+/**
+ * Returns whether or not the user is logged in
+ * @return boolean
+ **/
+function logged_in()
+{
+    return (isset($_SESSION['login']) && $_SESSION['login']);
+}
+
+/**
+ * If user is not logged in, display a 
+ * message and exit the page cleanly
+ * @gloabl $mysqli MySQL databse connection object
+ **/
+function login_protect()
+{
+    global $mysqli;
+    if(!logged_in()) {
+        output("You must be logged in to view this page!");
+        include("./footer.php");
+        exit;
+    }
+}
 ?>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("./functions.php");
 ?>
 <!DOCTYPE html>
@@ -13,7 +14,15 @@ require_once("./functions.php");
             <div id="nav">
                 <div id="nav_div">
                     <!-- Navigation Menu -->
-                    
+                    <?php
+                    /* If user is logged in, display game menu */
+                    if(logged_in()) {
+                        
+                    /* User is not logged in, display login form */
+                    } else {
+                        
+                    }
+                    ?>
                 </div>
             </div>
             <div id="content">
