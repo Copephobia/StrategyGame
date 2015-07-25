@@ -17,10 +17,22 @@ require_once("./functions.php");
                     <?php
                     /* If user is logged in, display game menu */
                     if(logged_in()) {
-                        
+                        ?>
+                        <a href="main.php">Your Stats</a><br><br>
+                        <a href="logout.php">Logout</a>
+                        <?php
+                    }
                     /* User is not logged in, display login form */
-                    } else {
-                        
+                    else {
+                        ?>
+                        <form action="login.php" method="post">
+                            Username: <input type="text" name="username"><br>
+                            Password: <input type="password" name="password"><br>
+                            <input type="submit" name="login" value="Login">
+                        </form>
+                        <br>
+                        <a href="register.php">Register</a>
+                        <?php
                     }
                     ?>
                 </div>

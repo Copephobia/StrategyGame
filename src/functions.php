@@ -18,12 +18,14 @@ if ($mysqli->connect_error) {
 
 /**
  * Protect strings
+ * @global $mysqli the MySQL database connection object
  * @param string $str string to protect
  * @return string
  */
 function protect($str)
 {
-    return mysqli_real_escape_string(strip_tags(addslashes($str)));
+    global $mysqli;
+    return mysqli_real_escape_string($mysqli,strip_tags(addslashes($str)));
 }
 
 /**
