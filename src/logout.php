@@ -7,7 +7,7 @@
  * 
  **/
  
- /* Start the session */
+/* Start the session */
 session_start();
 
 /* Unset the login variable, to be safe */

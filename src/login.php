@@ -7,7 +7,7 @@
  * 
  **/
  
- /* Require the Header file */
+/* Require the Header file */
 require_once("./header.php");
 
 /* Check if user is logged in already */

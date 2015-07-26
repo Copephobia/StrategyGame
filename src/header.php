@@ -1,6 +1,10 @@
 <?php
+/* Start the session */
 session_start();
+/* Require the functions page */
 require_once("./functions.php");
+/* Include the safe of player information, only if logged in */
+if(logged_in()) include_once("./safe.php");
 ?>
 <!DOCTYPE html>
     <head>
